@@ -124,7 +124,7 @@ const Dashboard: React.FC = () => {
               </tr>
               <tr>
                 <td className="title">Compra</td>
-                <td className="outcome">R$ 200,00</td>
+                <td className="outcome"> - R$ 200,00</td>
                 <td>Bradesco LTDA</td>
                 <td>02/09/2020</td>
               </tr>
