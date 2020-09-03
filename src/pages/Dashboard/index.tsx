@@ -71,21 +71,24 @@ const Dashboard: React.FC = () => {
               <p>Entradas</p>
               <img src={income} alt="Income" />
             </header>
-            <h1 data-testid="balance-income">{balance.income}</h1>
+            {/* <h1 data-testid="balance-income">{balance.income}</h1> */}
+            <h1 data-testid="balance-income">R$ 100.000,00</h1>
           </Card>
           <Card>
             <header>
               <p>Saídas</p>
               <img src={outcome} alt="Outcome" />
             </header>
-            <h1 data-testid="balance-outcome">{balance.outcome}</h1>
+            {/* <h1 data-testid="balance-outcome">{balance.outcome}</h1> */}
+            <h1 data-testid="balance-outcome">R$ 200,00</h1>
           </Card>
           <Card total>
             <header>
               <p>Total</p>
               <img src={total} alt="Total" />
             </header>
-            <h1 data-testid="balance-total">{balance.total}</h1>
+            {/* <h1 data-testid="balance-total">{balance.total}</h1> */}
+            <h1 data-testid="balance-total">R$ 99.800,00</h1>
           </Card>
         </CardContainer>
 
@@ -101,7 +104,7 @@ const Dashboard: React.FC = () => {
             </thead>
 
             <tbody>
-              {transactions.map(transaction => (
+              {/* {transactions.map(transaction => (
                 <tr key={transaction.id}>
                   <td className="title">{transaction.title}</td>
                   <td className={transaction.type}>
@@ -111,7 +114,20 @@ const Dashboard: React.FC = () => {
                   <td>{transaction.category.title}</td>
                   <td>{transaction.formattedDate}</td>
                 </tr>
-              ))}
+              ))} */}
+
+              <tr>
+                <td className="title">Salário</td>
+                <td className="income">R$ 100.000,00</td>
+                <td>Salário</td>
+                <td>22/08/2020</td>
+              </tr>
+              <tr>
+                <td className="title">Compra</td>
+                <td className="outcome">R$ 200,00</td>
+                <td>Bradesco LTDA</td>
+                <td>02/09/2020</td>
+              </tr>
             </tbody>
           </table>
         </TableContainer>
